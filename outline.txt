@@ -1,0 +1,19 @@
+context:
+    - My friends and I have a minecraft world that only one person has access to the files to host it.
+
+Problem:
+    - We cannot play without that person's presence/hosting.
+
+Solution:
+    - Create a way to syncronize the files to a common server so anyone can retrieve the files and host it.
+
+Google_Drive_Method:
+    Requirements: 
+                  - access to a specific google drive directory
+                  - a custom server launcher to automate the synchronization and launching of the server.
+                  - a shareable executable file.
+    
+    Steps:
+            - Create the google drive directory and partition it to each member (with access).
+            - Use python google API to connect to directory.
+            - Search for "IN USE" token file.
